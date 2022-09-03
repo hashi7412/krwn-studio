@@ -1,0 +1,41 @@
+@each $key, $value in $font-sizes {
+    .text-#{$key} {
+        font-size: $value;
+    }
+}
+
+@include media-up(lg) {
+    .root {
+        font-size: 16px;
+    }
+}
+
+@include media-up(md) {
+    .root {
+        font-size: 15px;
+    }
+}
+
+.text-capit {
+    text-transform: capitalize;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

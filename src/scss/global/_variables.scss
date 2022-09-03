@@ -1,0 +1,134 @@
+// @font-face {
+// 	font-family: SF-Pro-Display;
+// 	src: url(../../assets/font/SF-Pro-Display-Regular.otf);
+// }
+
+// @font-face {
+// 	font-family: Poppins;
+// 	src: url(../../assets/font/poppins/Poppins-SemiBold.ttf);
+// }
+
+$breakpoints: (
+	xs:				0,
+	sm:				576px,
+	md:				768px,
+	lg:				992px,
+	xl:				1200px,
+	xxl:			1400px
+);
+
+$container-width:	1400px;
+$subcontainer-width:1200px;
+$header-height:		80px;
+
+$font:				initial;
+$font2:				initial;
+
+$font-size-0:		18px;
+$font-size-1:		3.75em;
+$font-size-2:		2.35em;
+$font-size-3:		1.525em;
+
+$font-sizes:		(
+	0:					$font-size-0,
+	1:					$font-size-1,
+	2:					$font-size-2,
+	3:					$font-size-3
+);
+
+$space-0:			0em;
+$space-1:			0.5em;
+$space-2:			1em;
+$space-3:			1.5em;
+$space-4:			2em;
+$space-5:			3em;
+$space-6:			5em;
+$space-7:			7em;
+$space-8:			10em;
+$space-9:			15em;
+$space-10:			20em;
+
+$spaces:			(
+	0:					$space-0,
+	1:					$space-1,
+	2:					$space-2,
+	3:					$space-3,
+	4:					$space-4,
+	5:					$space-5,
+	6:					$space-6,
+	7:					$space-7,
+	8:					$space-8,
+	9:					$space-9,
+	10:					$space-10
+);
+
+$width-0:			calc(100% * 0 / 12);
+$width-1:			calc(100% * 1 / 12);
+$width-2:			calc(100% * 2 / 12);
+$width-3:			calc(100% * 3 / 12);
+$width-4:			calc(100% * 4 / 12);
+$width-5:			calc(100% * 5 / 12);
+$width-6:			calc(100% * 6 / 12);
+$width-7:			calc(100% * 7 / 12);
+$width-8:			calc(100% * 8 / 12);
+$width-9:			calc(100% * 9 / 12);
+$width-10:			calc(100% * 10 / 12);
+$width-11:			calc(100% * 11 / 12);
+$width-12:			calc(100% * 12 / 12);
+
+$width:				(
+	0:					$width-0,
+	1:					$width-1,
+	2:					$width-2,
+	3:					$width-3,
+	4:					$width-4,
+	5:					$width-5,
+	6:					$width-6,
+	7:					$width-7,
+	8:					$width-8,
+	9:					$width-9,
+	10:					$width-10,
+	11:					$width-11,
+	12:					$width-12
+);
+
+$white:             #FFFFFF;
+$black:             #000000;
+$primary:			#1194f2;
+$light-primary:		#d3ecfe;
+$gray:				#6b6262;
+$lightgray:			#c0b3b3;
+
+$theme-colors: (
+	white:				$white,
+	black:				$black,
+	primary:			$primary,
+	lightprimary:		$light-primary,
+	gray:				$gray
+);
+
+$bg:                #f1edfb;
+$box:				#ffffff;
+$color:             #0a1927;
+
+$bg-dark:           #011d4a;
+$color-dark:        #eef2f8;
+
+:root {
+	--bg:               #f1edfb;
+	--color:            #0a1927;
+	--color2:			#554d4d;
+	--box:				#d3ecfe;
+
+	--bg-dark:          #011d4a;
+	--color-dark:       #eef2f8;
+	--color2-dark:		#c0b3b3;
+	--box-dark:			#032659;
+}
+
+.dark {
+	--bg:               var(--bg-dark);
+	--color:            var(--color-dark);
+	--color2:           var(--color2-dark);
+	--box:				var(--box-dark);
+}

@@ -1,0 +1,8 @@
+@function is-exist ($one, $list) {
+    @each $key, $value in $list {
+        @if $key == $one {
+            @return $value;
+        }
+    }
+    @return false;
+}

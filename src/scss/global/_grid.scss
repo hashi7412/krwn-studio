@@ -1,0 +1,145 @@
+@mixin flex($dir, $vertial, $horizontal, $wrap, $gap:none) {
+	display: flex;
+	@if $dir		!= none {flex-direction: $dir;}
+	@if $vertial	!= none {justify-content: $vertial;}
+	@if $horizontal	!= none {align-items: $horizontal;}
+	@if $wrap		!= none {flex-wrap: $wrap;}
+	@if $gap		!= none {gap: $gap;}
+}
+
+// $breakpoints
+
+@mixin row-between {
+	@include flex(row, space-between, none, wrap, )
+}
+
+@mixin row-between-center {
+	@include flex(none, space-between, center, wrap, );
+}
+
+@mixin row-between-end {
+	@include flex(none, space-between, flex-end, wrap, )
+}
+
+@mixin row-end-center {
+	@include flex(none, flex-end, center, none, )
+}
+
+@mixin row-vcenter {
+	@include flex(none, flex-start, center, wrap, )
+}
+
+@mixin row-around-center {
+	@include flex(none, space-around, center, wrap, )
+}
+
+@mixin row($sp: 0.25em) {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$sp;
+	margin-right: -$sp;
+	margin-bottom: calc($sp * 2);
+	row-gap: calc($sp * 2);
+
+	>* {
+		padding-left: $sp;
+		padding-right: $sp;
+		height: 100%;
+	}
+}
+
+@each $key, $value in $spaces {
+	.row-#{$key} {
+		@include row($value);
+	}
+}
+
+@each $pKey, $pValue in $breakpoints {
+	@each $wKey, $wValue in $width {
+		.col-#{$pKey}-#{$wKey} {
+			@include media-down($pKey) {
+				flex: 1 1 $wValue !important;
+				width: $wValue !important;
+			}
+			flex: 1 1 100%;
+			width: 100%;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.row {
+	@include row;
+}
+
+.vcenter {
+	align-items: center;
+}
+
+.row-between {
+	@include row-between;
+}
+
+.row-around-center {
+	@include row-around-center;
+}
+
+@each $key, $value in $spaces {
+	.m-#{$key} {
+		margin: $value !important;
+	}
+	.mx-#{$key} {
+		margin-left: $value !important;
+		margin-right: $value !important;
+	}
+	.my-#{$key} {
+		margin-top: $value !important;
+		margin-bottom: $value !important;
+	}
+	.ml-#{$key} {
+		margin-left: $value !important;
+	}
+	.mt-#{$key} {
+		margin-top: $value !important;
+	}
+	.mr-#{$key} {
+		margin-right: $value !important;
+	}
+	.mb-#{$key} {
+		margin-bottom: $value !important;
+	}
+	.p-#{$key} {
+		padding: $value !important;
+	}
+	.px-#{$key} {
+		padding-left: $value !important;
+		padding-right: $value !important;
+	}
+	.py-#{$key} {
+		padding-top: $value !important;
+		padding-bottom: $value !important;
+	}
+	.pl-#{$key} {
+		padding-left: $value !important;
+	}
+	.pt-#{$key} {
+		padding-top: $value !important;
+	}
+	.pr-#{$key} {
+		padding-right: $value !important;
+	}
+	.pb-#{$key} {
+		padding-bottom: $value !important;
+	}
+}
+
+.fill {
+	flex: 1;
+}
+
+.mr {
+	margin-right: $space-2;
+}

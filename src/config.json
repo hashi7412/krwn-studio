@@ -1,0 +1,26 @@
+{
+	"appKey": "ecoland",
+	"title": "Ecoland",
+	"menu": [
+		{
+			"label": "About",
+			"url": "#about"
+		},
+		{
+			"label": "Collection",
+			"url": "#collection"
+		},
+		{
+			"label": "Value",
+			"url": "#value"
+		},
+		{
+			"label": "Roadmap",
+			"url": "#roadmap"
+		},
+		{
+			"label": "Team",
+			"url": "#team"
+		}
+	]
+}

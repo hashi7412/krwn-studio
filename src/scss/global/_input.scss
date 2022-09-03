@@ -1,0 +1,32 @@
+.input-form {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    >* {
+        padding: 0.8em 1em;
+    }
+
+    input, button {
+        border: none;
+        outline: none;
+        margin: 0;
+        background: transparent;
+        height: 100%;
+        transition: all ease-in-out .3s;
+    }
+
+    input {
+        flex: 1;
+        min-width: 0;
+        border: 2px solid $gray;
+        padding-right: 80px;
+    }
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 80px;
+    }
+}

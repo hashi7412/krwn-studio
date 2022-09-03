@@ -1,0 +1,154 @@
+.root {
+    background-color: var(--bg);
+    font-size: $font-size-0;
+    
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+@mixin container {
+    max-width: $container-width;
+    padding-right: $space-4;
+    padding-left: $space-4;
+    margin: auto;
+}
+
+@mixin subcontainer {
+    max-width: $subcontainer-width;
+    padding-right: $space-4;
+    padding-left: $space-4;
+    margin: auto;
+}
+
+@mixin full-screen {
+    min-height: 100vh;
+}
+
+main {
+    padding-top: $header-height !important;
+}
+
+.container {
+    @include container;
+}
+
+.subcontainer {
+    @include subcontainer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-top: 0;
+    margin-bottom: $space-2;
+}
+
+h1 {
+    font-size: $font-size-1;
+
+    @include media-up (md) {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+}
+
+h2 {
+    font-size: $font-size-2;
+
+    @include media-up (md) {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+}
+
+h3 {
+    font-size: $font-size-3;
+
+    @include media-up (md) {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+}
+
+p, span {
+    font-family: $font2;
+    margin-top: 0;
+    margin-bottom: $space-2;
+}
+
+li {
+    font-family: $font2;
+}
+
+img {
+    width: 100%;
+    max-height: 100%;
+}
+
+// initialize static
+
+html {
+    scroll-behavior: unset;
+}
+
+html, body {
+    font-family: $font;
+    font-size: 1em;
+    line-height: 1.325em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    color: var(--color);
+    box-sizing: border-box;
+}
+
+div, main, section, header, menu, footer {
+    padding: 0;
+    margin: 0;
+}
+
+.root {
+    @each $key, $value in $breakpoints {
+        @include media-down($key) {
+            // font-size: ($value / 1400px) * $font-size-0 !important;
+        }
+    }
+}
+
+ul, ol {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: $font2;
+}
+
+a, button, input {
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+section {
+    padding-top: $space-6;
+    margin-bottom: $space-8;
+
+    @include media-up (md) {
+        padding-top: $space-3;
+        margin-bottom: $space-5;
+    }
+}
+
+input {
+    display: block;
+    width: 100%;
+}
