@@ -92,6 +92,11 @@ $width:				(
 	12:					$width-12
 );
 
+$bg-zindex:			0;
+$header-zindex:		1000;
+$main-zindex:		1;
+$dialog-zindex:		9000;
+
 $white:             #FFFFFF;
 $black:             #000000;
 $primary:			#1194f2;

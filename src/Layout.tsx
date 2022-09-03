@@ -5,16 +5,6 @@ import useStore, { config } from "./useStore"
 
 interface LayoutProps {
     checked: boolean
-    mobile: boolean
-    scroll: boolean
-}
-
-const getMobile = () => {
-    if (window.innerWidth > 992) {
-        return true
-    }
-
-    return false
 }
 
 export default function Layout ({children}: {children: any}) {
@@ -22,8 +12,6 @@ export default function Layout ({children}: {children: any}) {
 
     const [status, setStatus] = React.useState<LayoutProps>({
         checked: false,
-        mobile: getMobile(),
-        scroll: false
     })
 
     const onLinkHandle = () => {
@@ -33,26 +21,6 @@ export default function Layout ({children}: {children: any}) {
     const onMenu = () => {
         setStatus({...status, checked: !status.checked})
     }
-
-    React.useEffect(() => {
-        const changeMobile = () => {
-            setStatus({...status, mobile: getMobile()})
-        }
-
-        const moveHeader = () => {
-            if(window.scrollY > 200) {
-                setStatus({...status, scroll: true})
-            } else {
-                setStatus({...status, scroll: false})
-            }
-        }
-
-        window.addEventListener("resize", changeMobile)
-
-        window.addEventListener("scroll", moveHeader)
-
-        // return window.removeEventListener("resize", changeMobile)
-    }, [])
 
     return (
         <div className={`root ${theme}`} id="home">
@@ -70,7 +38,7 @@ export default function Layout ({children}: {children: any}) {
                     </button>
                 </div>
             </div>
-            <header className={`${status.scroll ? "scroll-down" : ""}`}>
+            <header>
                 <div className="header">
                     <div className="logo">
                         <Link to="/">

@@ -26,50 +26,9 @@ function Home () {
     return (
         <main>
 			<section className="banner">
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
-				<h1>Welcome Metaverse</h1>
+				<div className="container">
+					<h1>Welcome Metaverse</h1>
+				</div>
 			</section>
         </main>
     )
