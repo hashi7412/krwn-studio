@@ -13,6 +13,10 @@
 	@include flex(row, space-between, none, wrap, )
 }
 
+@mixin row-center-center {
+	@include flex(none, center, center, wrap, );
+}
+
 @mixin row-between-center {
 	@include flex(none, space-between, center, wrap, );
 }
@@ -81,6 +85,10 @@
 
 .row-between {
 	@include row-between;
+}
+
+.row-center-center {
+	@include row-center-center();
 }
 
 .row-around-center {

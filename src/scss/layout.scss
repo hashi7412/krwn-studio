@@ -56,12 +56,14 @@
 }
 
 .logo {
-	flex: 1;
-	img {
-		width: 200px;
-
-		@include media-up (md) {
-			width: 120px;
+	a {
+		display: flex;
+		img {
+			width: 65px;
+	
+			@include media-up (md) {
+				width: 120px;
+			}
 		}
 	}
 
@@ -73,6 +75,7 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: $header-zindex;
+	background: var(--bg2);
 
 	&.scroll-down {
 		position: fixed;
@@ -90,7 +93,8 @@ header {
 		position: relative;
 		min-height: $header-height;
 		@include container;
-		@include row-between-center;
+		@include row-between-end;
+		padding-bottom: 1em;
 		overflow: initial;
 
 		#menu-checkbox {
@@ -104,7 +108,6 @@ header {
 							background: var(--bg);
 							justify-content: flex-start;
 							height: calc(100vh);
-							// top: $header-height;
 						}
 					}
 	
@@ -134,13 +137,14 @@ header {
 
 		ul {
 			@include row-between-center;
-			gap: $space-2;
+			gap: $space-1;
 			list-style: none;
 			li {
 				a {
 					display: block;
-					padding: $space-2 $space-3;
-					font-weight: 600;
+					padding: 0.3em $space-2;
+					background: $lightgray;
+					border-radius: 0.3em;
 					
 					&:hover {
 						background-color: rgba($color: #FFFFFF, $alpha: 0.2);

@@ -8,15 +8,11 @@
 
 @mixin container {
     max-width: $container-width;
-    padding-right: $space-4;
-    padding-left: $space-4;
     margin: auto;
 }
 
 @mixin subcontainer {
     max-width: $subcontainer-width;
-    padding-right: $space-4;
-    padding-left: $space-4;
     margin: auto;
 }
 
@@ -35,10 +31,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.25em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    margin-top: 0;
-    margin-bottom: $space-2;
+    margin: 0;
 }
 
 h1 {
@@ -132,16 +125,6 @@ a {
 a, button, input {
     font-size: 0.9em;
     text-decoration: none;
-}
-
-section {
-    padding-top: $space-6;
-    margin-bottom: $space-8;
-
-    @include media-up (md) {
-        padding-top: $space-3;
-        margin-bottom: $space-5;
-    }
 }
 
 input {

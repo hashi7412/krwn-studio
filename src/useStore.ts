@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 import { useSelector, useDispatch } from 'react-redux'
 import Config from './config.json'
 
-import LogoIcon         from "./assets/images/logo-dark.webp"
-import LogoDarkIcon     from "./assets/images/logo-light.webp"
+import LogoIcon         from "./assets/images/logo-light.png"
+import LogoDarkIcon     from "./assets/images/logo-dark.png"
 
 export const config = Config
 
