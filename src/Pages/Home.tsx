@@ -24,8 +24,8 @@ const Home = () => {
 			<section className="banner">
 				<div className="container">
 					<h1>Digital fashion house for the <span>Metaverse.</span></h1>
-					<div className="body">
-						<img src={Innovate} alt="cloth" />
+					<div className="hoodle">
+						<Hoodle />
 					</div>
 					<div className="desc">
 						<div>
@@ -34,35 +34,40 @@ const Home = () => {
 						</div>
 						<p>Our debut limited collection of only 891 pieces: each H8D is a completely unique piece, exclusively available only to you.</p>
 					</div>
+					<div className="intro"></div>
 				</div>
 			</section>
 			<section className="krwn">
-				<div className="main">
-					<Hoodle />
-				</div>
-				<div className="desc-1">
-					<span>KRWN places priority on 3 fundamentals of design: Imagination Creativity and Innovation</span>
-					<div></div>
-				</div>
-				<div className="desc-2">
-					<span>Hoodies were chosen for the debut collection for its gender neutrality, common usage and symbolism in the streetwear community</span>
-					<div></div>
-				</div>
-				<div className="desc-3">
-					<span>Each hoodle in our collection is called H8D or H8Dz (H-U-D), the number 8 symbolising 891 total pieces in the collection</span>
-					<div></div>
-				</div>
-				<div className="desc-4">
-					<span>KRWN releases collections in seasons. Our debut collection falls under SEASON 0 and titled "NEONIZE" for our strong emphasis on bright colorways</span>
-					<div></div>
-				</div>
-				<div className="desc-5">
-					<span>Season 0 is divided into 4 rarity levels, each with their own distinctly recognisable features</span>
-					<div></div>
-				</div>
-				<div className="desc-6">
-					<span>KRWN places priority on 3 fundamentals of design: Imagination Creativity and Innovation</span>
-					<div></div>
+				<div>
+					<div className="hoodle">
+						<Hoodle />
+					</div>
+					<div className="contexts">
+						<div className="desc-1">
+							<span>KRWN places priority on 3 fundamentals of design: Imagination Creativity and Innovation</span>
+							<div></div>
+						</div>
+						<div className="desc-2">
+							<span>Hoodies were chosen for the debut collection for its gender neutrality, common usage and symbolism in the streetwear community</span>
+							<div></div>
+						</div>
+						<div className="desc-3">
+							<span>Each hoodle in our collection is called H8D or H8Dz (H-U-D), the number 8 symbolising 891 total pieces in the collection</span>
+							<div></div>
+						</div>
+						<div className="desc-4">
+							<span>KRWN releases collections in seasons. Our debut collection falls under SEASON 0 and titled "NEONIZE" for our strong emphasis on bright colorways</span>
+							<div></div>
+						</div>
+						<div className="desc-5">
+							<span>Season 0 is divided into 4 rarity levels, each with their own distinctly recognisable features</span>
+							<div></div>
+						</div>
+						<div className="desc-6">
+							<span>KRWN places priority on 3 fundamentals of design: Imagination Creativity and Innovation</span>
+							<div></div>
+						</div>
+					</div>
 				</div>
 				<div className="smoke1"></div>
 				<div className="smoke2"></div>

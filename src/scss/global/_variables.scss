@@ -1,17 +1,17 @@
 @font-face {
 	font-family: Pattanakarn;
-	src: url(../../assets/font/Pattanakarn/FontsFree-Net-Pattanakarn-Regular.ttf);
+	src: url(../../assets/font/pattanakarn/FontsFree-Net-Pattanakarn-Regular.ttf);
 }
 
-// @font-face {
-// 	font-family: Chakra-SemiBold;
-// 	src: url(../../assets/font/ChakraPetch/ChakraPetch-SemiBold.ttf);
-// }
+@font-face {
+	font-family: Playfair;
+	src: url(../../assets/font/playfair/PlayfairDisplay-Regular.otf);
+}
 
-// @font-face {
-// 	font-family: Poppins;
-// 	src: url(../../assets/font/poppins/Poppins-SemiBold.ttf);
-// }
+@font-face {
+	font-family: Nasalization;
+	src: url(../../assets/font/nasalization/nasalization-rg.otf);
+}
 
 $breakpoints: (
 	xs:				0,
@@ -30,12 +30,13 @@ $font:				Pattanakarn, sans-serif;
 $font2:				sans-serif;
 
 $font-size-0:		14px;
-$font-size-1:		5em;
+$font-size-1:		5.5em;
 $font-size-2:		4em;
 $font-size-3:		2.75em;
 $font-size-4:		2.5em;
 $font-size-5:		1.525em;
-$font-size-6:		1.525em;
+$font-size-6:		1.25em;
+$font-size-7:		1.1em;
 
 $font-sizes:		(
 	0:					$font-size-0,

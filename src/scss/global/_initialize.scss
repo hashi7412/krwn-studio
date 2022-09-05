@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @mixin h1 {
     font-size: $font-size-1;
+    @include media-up (lg) {
+        font-size: $font-size-2;
+    }
     @include media-up (md) {
         font-size: $font-size-2;
     }
@@ -60,8 +63,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 @mixin h5 {
     font-size: $font-size-5;
-    @include media-up (md) {
+    @include media-up (lg) {
         font-size: $font-size-6;
+    }
+    @include media-up (lg) {
+        font-size: $font-size-7;
+    }
+    @include media-up (md) {
+        font-size: $font-size-7;
     }
 }
 @mixin h6 {

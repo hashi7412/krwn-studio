@@ -1,75 +1,236 @@
 .banner {
+	position: relative;
 	padding-top: $header-height;
 	min-height: 100vh;
+	overflow: hidden;
+	background: #0f0d1a;
+	h1 {
+		position: absolute;
+		font-family: Playfair;
+		top: 20%;
+		left: 50%;
+		width: 55%;
+		transform: translate(-50%, 0);
+		text-align: center;
+		color: $white;
+		z-index: 2;
+		span {
+			font-family: Nasalization;
+			color: #41ff03;
+		}
+	}
+	.intro {
+		position: absolute;
+		top: 15%;
+		right: 10%;
+		background: url(../../assets/images/intro/intro-green.png) no-repeat;
+		background-size: cover;
+		width: 150px;
+		height: 150px;
+	}
+	.hoodle {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 33.3%;
+		@include flex(none, center, center, none,);
+	}
+}
+
+.hoodle {
+
+	canvas {
+		&:last-child {
+			display: none !important;
+		}
+	}
 }
 
 .krwn {
 	position: relative;
 	background: #070c07;
+	overflow: hidden;
 
 	>div {
 		position: absolute;
+
+		@include media-up (sm) {
+			position: initial;
+		}
 	}
 
-	.main {
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+	>div:first-child {
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
 		z-index: 2;
-	}
 
-	>div:not(.main, .smoke1, .smoke2) {
-		width: 330px;
-		z-index: 3;
-		span {
-			font-size: 1.2em;
-			display: inline-block;
-			color: $white;
-			text-align: center;
+		.hoodle {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translate(-50%, -50%);
+			z-index: 3;
+			@include media-up (xl) {
+				transform: translate(-50%, -50%) scale(0.9);
+			}
+			@include media-up (md) {
+				transform: translate(-50%, -50%) scale(0.6);
+			}
+			@include media-up (sm) {
+				transform: translate(-50%, -50%) scale(0.5);
+			}
+	
+			@include media-up (sm) {
+				position: initial;
+				margin: -30% auto -30%;
+				transform: translate(0, 0) scale(0.5);
+			}
 		}
 
-		div {
-			position: absolute;
-			background-size: cover;
+		.contexts {
+			> div {
+				position: absolute;
+				width: 25%;
+				z-index: 2;
+				span {
+					@include h5;
+					display: inline-block;
+					color: $white;
+					text-align: center;
+				}
+		
+				div {
+					position: absolute;
+					background-size: 100% auto;
+					background-position: center center;
+					padding-top: 100%;
+		
+					@include media-up(md) {
+						display: none;
+					}
+				}
+		
+				@include media-up(sm) {
+					position: initial;
+					width: 80%;
+					margin: auto;
+					margin-bottom: $space-2;
+				}
+			}
 		}
 	}
 
 	.desc-1 {
-		top: 50%;
-		left: 2%;
+		top: 55%;
+		left: 0%;
 		div {
-			background: url(../../assets/images/arrows/3.png);
-			top: 0;
+			background: url(../../assets/images/arrows/5.png) no-repeat;
+			top: 90%;
 			left: 100%;
-			width: 400px;
-			height: 400px;
+			transform: translate(-20%, -50%);
+			width: calc((25vw - 0vw - 120px) / 0.63);
+		}
+
+		@include media-up (md) {
+			top: 45%;
+			left: 3%;
 		}
 	}
 	.desc-2 {
 		bottom: 15%;
-		right: 1%;
+		right: 5%;
+		div {
+			background: url(../../assets/images/arrows/8.png) no-repeat;
+			top: 90%;
+			right: 100%;
+			transform: translate(5%, -50%);
+			width: calc((25vw - 2vw - 0px) / 0.9);
+		}
+
+		@include media-up (md) {
+			top: 75%;
+			right: 3%;
+		}
 	}
 	.desc-3 {
-		top: 15%;
-		left: 10%;
+		top: 20%;
+		left: 3%;
+		div {
+			background: url(../../assets/images/arrows/4.png) no-repeat;
+			top: 55%;
+			left: 100%;
+			transform: translate(-18.5%, -50%);
+			width: calc((25vw - 2vw - 90px) / 0.63);
+		}
+
+		@include media-up (md) {
+			top: 15%;
+			left: 3%;
+		}
 	}
 	.desc-4 {
 		top: 10%;
 		right: 5%;
+		div {
+			background: url(../../assets/images/arrows/3.png) no-repeat;
+			top: 60%;
+			right: 100%;
+			transform: translate(10%, -50%);
+			width: calc((25vw - 2vw - 0px) / 0.8);
+		}
+
+		@include media-up (md) {
+			top: 15%;
+			right: 3%;
+		}
 	}
 	.desc-5 {
 		bottom: 10%;
-		left: 10%;
+		left: 3%;
+		div {
+			background: url(../../assets/images/arrows/7.png) no-repeat;
+			top: 33%;
+			left: 100%;
+			transform: translate(-10%, -50%);
+			width: calc((25vw - 2vw - 80px) / 0.8);
+		}
+
+		@include media-up (md) {
+			top: 75%;
+			left: 3%;
+		}
 	}
 	.desc-6 {
-		top: 40%;
+		top: 50%;
 		right: 5%;
+		div {
+			background: url(../../assets/images/arrows/6.png) no-repeat;
+			top: 100%;
+			right: 90%;
+			transform: translate(20%, -50%);
+			width: calc((25vw - 2vw - 120px) / 0.6);
+		}
+
+		@include media-up (md) {
+			top: 45%;
+			right: 3%;
+		}
 	}
 
 	.smoke1, .smoke2 {
 		background-size: cover;
 		opacity: 0.5;
-		z-index: 1;
+		z-index: 0;
+
+		@include media-up (sm) {
+			display: none;
+		}
 	}
 
 	.smoke1 {
@@ -97,7 +258,7 @@
 			height: 100%;
 			cursor: default;
 
-			:hover {
+			&:hover {
 				opacity: 0.6;
 			}
 
@@ -117,7 +278,13 @@
 			}
 
 			.icon {
+				padding: $space-1;
+				@include flex(none, center, center, none, );
 				@include h1;
+
+				@include media-up (sm) {
+					padding: 0;
+				}
 
 				> *:first-child {
 					display: none;
@@ -138,7 +305,7 @@
 				span {
 					font-size: calc(100vh / 12);
 					@include media-up (md) {
-						font-size: calc(100vw / 7);
+						font-size: calc(100vw / 9);
 					}
 				}
 			}
@@ -148,7 +315,7 @@
 				span {
 					font-size: calc(100vh / 10);
 					@include media-up (md) {
-						font-size: calc(100vw / 6);
+						font-size: calc(100vw / 7);
 					}
 				}
 			}
@@ -158,7 +325,7 @@
 				span {
 					font-size: calc(100vh / 16);
 					@include media-up (md) {
-						font-size: calc(100vw / 10);
+						font-size: calc(100vw / 12);
 					}
 				}
 			}
@@ -168,7 +335,7 @@
 				span {
 					font-size: calc(100vh / 14);
 					@include media-up (md) {
-						font-size: calc(100vw / 8);
+						font-size: calc(100vw / 10);
 					}
 				}
 			}
@@ -441,5 +608,4 @@
 section {
 	position: relative;
 	min-height: 100vh;
-	padding-top: calc($header-height);
 }

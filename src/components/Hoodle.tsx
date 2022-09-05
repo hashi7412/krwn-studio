@@ -45,7 +45,7 @@ function easeOutCirc(x: number) {
 const Hoodle = () => {
 	const refContainer = useRef<HTMLDivElement>(null);
 	const [loading, setLoading] = useState(true);
-	const [renderer, setRenderer] = useState();
+	const [renderer, setRenderer] = useState(null);
 
 	useEffect(() => {
 		const { current: container } = refContainer;
@@ -63,7 +63,7 @@ const Hoodle = () => {
 			setRenderer(renderer);
 
 			const scene = new THREE.Scene();
-			const scale = 100;
+			const scale = 55;
 			const camera = new THREE.OrthographicCamera(
 				-scale,
 				scale,
@@ -120,15 +120,15 @@ const Hoodle = () => {
 				renderer.dispose();
 			};
 		}
-	}, [renderer]);
+	}, []);
 
 	return (
 		<div
-			style={{ height: "896px", width: "896px", position: "relative" }}
+			style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "700px", minWidth: "700px", position: "relative" }}
 			ref={refContainer}
 		>
 			{loading && (
-				<span style={{ position: "absolute", left: "50%", top: "50%", zIndex: 999 }}>
+				<span style={{ position: "absolute", left: "50%", top: "50%" }}>
 					Loading...
 				</span>
 			)}
