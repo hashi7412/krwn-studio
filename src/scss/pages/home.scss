@@ -1,45 +1,142 @@
 .banner {
-	position: relative;
-	padding-top: $header-height;
 	min-height: 100vh;
 	overflow: hidden;
 	background: #0f0d1a;
-	h1 {
+
+	.alice-carousel__dots {
 		position: absolute;
-		font-family: Playfair;
-		top: 20%;
-		left: 50%;
-		width: 55%;
-		transform: translate(-50%, 0);
-		text-align: center;
-		color: $white;
-		z-index: 2;
-		span {
-			font-family: Nasalization;
-			color: #41ff03;
+		bottom: 50px;
+		right: 150px;
+		@include row-center-center;
+		height: 30px;
+		margin: 0;
+		li {
+			margin: 0 !important;
+			border-radius: 0;
+			width: 30px;
+
+			&:not(:last-child) {
+				border-right: 1px solid #bbb;
+			}
+			
+			&:first-child {
+				border-radius: 10px 0 0 10px;
+			}
+			
+			&:last-child {
+				border-radius: 0 10px 10px 0;
+			}
 		}
 	}
-	.intro {
+
+	.alice-carousel__prev-btn, .alice-carousel__next-btn {
 		position: absolute;
-		top: 15%;
-		right: 10%;
-		background: url(../../assets/images/intro/intro-green.png) no-repeat;
-		background-size: cover;
-		width: 150px;
-		height: 150px;
+		bottom: 50px;
+		display: inline-block;
+		padding: 0;
+		width: auto;
+		p {
+			margin: auto;
+			padding: 0;
+			span {
+				@include row-center-center;
+				font-size: 2em;
+				background: $white;
+				min-width: 30px !important;
+				height: 30px;
+				border-radius: 50%;
+			}
+		}
 	}
-	.hoodle {
-		position: absolute;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 33.3%;
-		@include flex(none, center, center, none,);
+
+	.alice-carousel__prev-btn {
+		right: 100px;
+	}
+
+	.alice-carousel__next-btn {
+		right: 50px
+	}
+
+	.container {
+		position: relative;
+		height: 100vh;
+
+		h1 {
+			position: absolute;
+			font-family: Playfair;
+			top: 20%;
+			left: 50%;
+			width: 55%;
+			transform: translate(-50%, 0);
+			text-align: center;
+			color: $white;
+			z-index: 2;
+
+			@include media-up(xxl) {
+				width: 80%;
+			}
+
+			@include media-up(md) {
+				width: 90%;
+			}
+
+			span {
+				font-family: Nasalization;
+				color: #41ff03;
+			}
+		}
+
+		.intro {
+			position: absolute;
+			top: 15%;
+			right: 10%;
+			background: url(../../assets/images/intro/intro-green.png) no-repeat;
+			background-size: cover;
+			width: 150px;
+			height: 150px;
+		}
+
+		.hoodle {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 33.3%;
+			@include flex(none, center, center, none,);
+
+			@include media-up (xl) {
+				transform: translate(-50%, -50%) scale(0.9);
+			}
+			@include media-up (md) {
+				transform: translate(-50%, -50%) scale(0.6);
+			}
+			@include media-up (sm) {
+				transform: translate(-50%, -50%) scale(0.5);
+			}
+		}
+
+		.desc {
+			position: absolute;
+			bottom: 2%;
+			left: 10%;
+			@include row-between-center;
+			flex-wrap: nowrap;
+			max-width: 400px;
+			gap: $space-2;
+
+			>div {
+				background: url(../../assets/images/intro/Elipse.png) no-repeat;
+				background-size: cover;
+			}
+
+			* {
+				color: $white;
+			}
+		}
 	}
 }
 
 .hoodle {
-
 	canvas {
 		&:last-child {
 			display: none !important;
@@ -483,9 +580,9 @@
 						}
 
 						@include media-up(md) {
-							width: 80%;
-							margin-top: -20%;
-							margin-bottom: -23%;
+							width: 150px;
+							margin-top: -30px;
+							margin-bottom: -50px;
 						}
 					}
 

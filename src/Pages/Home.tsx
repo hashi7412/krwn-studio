@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import useStore from "../useStore"
 import Icons from "../components/Icons"
 import Hoodle from "../components/Hoodle"
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 import Camera				from "../assets/images/icons/1.png"
 import Events				from "../assets/images/icons/4.png"
@@ -19,23 +21,79 @@ import Email				from "../assets/images/socials/twitter.png"
 const Home = () => {
 	const { Logo } = useStore()
 
+	const items = [
+		(
+			<div className="container">
+				<h1>Digital fashion house for the <span>Metaverse.</span></h1>
+				<div className="hoodle">
+					<Hoodle />
+				</div>
+				<div className="desc">
+					<div>
+						<h5>891</h5>
+						<p>unique items</p>
+					</div>
+					<p>Our debut limited collection of only 891 pieces: each H8D is a completely unique piece, exclusively available only to you.</p>
+				</div>
+				<div className="intro"></div>
+			</div>
+		),
+		(
+			<div className="container">
+				<h1>Digital fashion house for the <span>Metaverse.</span></h1>
+				<div className="hoodle">
+					<Hoodle />
+				</div>
+				<div className="desc">
+					<div>
+						<h5>891</h5>
+						<p>unique items</p>
+					</div>
+					<p>Our debut limited collection of only 891 pieces: each H8D is a completely unique piece, exclusively available only to you.</p>
+				</div>
+				<div className="intro"></div>
+			</div>
+		),
+		(
+			<div className="container">
+				<h1>Digital fashion house for the <span>Metaverse.</span></h1>
+				<div className="hoodle">
+					<Hoodle />
+				</div>
+				<div className="desc">
+					<div>
+						<h5>891</h5>
+						<p>unique items</p>
+					</div>
+					<p>Our debut limited collection of only 891 pieces: each H8D is a completely unique piece, exclusively available only to you.</p>
+				</div>
+				<div className="intro"></div>
+			</div>
+		),
+		(
+			<div className="container">
+				<h1>Digital fashion house for the <span>Metaverse.</span></h1>
+				<div className="hoodle">
+					<Hoodle />
+				</div>
+				<div className="desc">
+					<div>
+						<h5>891</h5>
+						<p>unique items</p>
+					</div>
+					<p>Our debut limited collection of only 891 pieces: each H8D is a completely unique piece, exclusively available only to you.</p>
+				</div>
+				<div className="intro"></div>
+			</div>
+		)
+	]
+
 	return (
 		<main>
 			<section className="banner">
-				<div className="container">
-					<h1>Digital fashion house for the <span>Metaverse.</span></h1>
-					<div className="hoodle">
-						<Hoodle />
-					</div>
-					<div className="desc">
-						<div>
-							<h5>891</h5>
-							<p>unique items</p>
-						</div>
-						<p>Our debut limited collection of only 891 pieces: each H8D is a completely unique piece, exclusively available only to you.</p>
-					</div>
-					<div className="intro"></div>
-				</div>
+				<AliceCarousel 
+					items={items}
+				/>
 			</section>
 			<section className="krwn">
 				<div>

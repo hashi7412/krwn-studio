@@ -74,7 +74,8 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #FFFFFF20;
+	background: #00000040;
+	backdrop-filter: blur(10px);
 	z-index: $header-zindex;
 
 	&.scroll-down {
