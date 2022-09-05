@@ -138,7 +138,7 @@
 
 .hoodle {
 	canvas {
-		&:last-child {
+		&:not(:first-child) {
 			display: none !important;
 		}
 	}
