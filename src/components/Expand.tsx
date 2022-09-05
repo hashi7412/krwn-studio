@@ -60,6 +60,10 @@ const Expand = ({ className, top, left, width, height, swapChildren, onClick, ch
 		}
 	}
 
+	React.useEffect(() => {
+		window.addEventListener("resize", function () {})
+	}, [])
+
 	return (
 		<div 
 			ref={refContainer} 

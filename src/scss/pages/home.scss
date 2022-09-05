@@ -670,6 +670,11 @@
 	padding-right: $space-7;
 	@include col-center-center;
 
+	@include media-up (lg) {
+		padding-left: $space-2;
+		padding-right: $space-2;
+	}
+
 	.expand-container {
 
 		>div {

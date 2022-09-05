@@ -24,7 +24,7 @@ export default function Layout ({children}: {children: any}) {
 
     return (
         <div className={`root ${theme}`} id="home">
-            <div className="setting">
+            {/* <div className="setting">
                 <div>
                     <Icons.Setting color="var(--color)" />
                 </div>
@@ -37,7 +37,7 @@ export default function Layout ({children}: {children: any}) {
                         )}
                     </button>
                 </div>
-            </div>
+            </div> */}
             <header>
                 <div className="header">
                     <div className="logo">
