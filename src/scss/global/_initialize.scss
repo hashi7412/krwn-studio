@@ -34,41 +34,76 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h1 {
+@mixin h1 {
     font-size: $font-size-1;
-
     @include media-up (md) {
-        // font-size: 2em;
-        // margin-bottom: 0;
+        font-size: $font-size-2;
     }
+}
+@mixin h2 {
+    font-size: $font-size-2;
+    @include media-up (md) {
+        font-size: $font-size-3;
+    }
+}
+@mixin h3 {
+    font-size: $font-size-3;
+    @include media-up (md) {
+        font-size: $font-size-4;
+    }
+}
+@mixin h4 {
+    font-size: $font-size-4;
+    @include media-up (md) {
+        font-size: $font-size-5;
+    }
+}
+@mixin h5 {
+    font-size: $font-size-5;
+    @include media-up (md) {
+        font-size: $font-size-6;
+    }
+}
+@mixin h6 {
+    font-size: $font-size-6;
+    @include media-up (md) {
+        font-size: $font-size-6;
+    }
+}
+
+h1 {
+    @include h1;
 }
 
 h2 {
-    font-size: $font-size-2;
-
-    @include media-up (md) {
-        // font-size: 1.5em;
-        // margin-bottom: 0;
-    }
+    @include h2;
+    margin-bottom: $space-1;
 }
 
 h3 {
-    font-size: $font-size-3;
-
-    @include media-up (md) {
-        // font-size: 1.2em;
-        // margin-bottom: 0;
-    }
+    @include h3;
 }
 
-p, span {
-    font-family: $font2;
+h4 {
+    @include h4;
+}
+
+h5 {
+    @include h5;
+}
+
+h6 {
+    @include h6;
+}
+
+span, label {
     margin-top: 0;
-    margin-bottom: $space-2;
+    margin-bottom: 0;
 }
 
-li {
-    font-family: $font2;
+p {
+    margin-top: 0;
+    margin-bottom: $space-1;
 }
 
 img {
@@ -85,7 +120,7 @@ html {
 html, body {
     font-family: $font;
     font-size: 1em;
-    line-height: 1.325em;
+    line-height: 1.25em;
 }
 
 body {
@@ -97,6 +132,7 @@ body {
 * {
     color: var(--color);
     box-sizing: border-box;
+    line-height: 1.25em;
 }
 
 div, main, section, header, menu, footer {
@@ -116,10 +152,6 @@ ul, ol {
     display: block;
     margin: 0;
     padding: 0;
-}
-
-a {
-    font-family: $font2;
 }
 
 a, button, input {

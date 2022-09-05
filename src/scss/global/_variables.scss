@@ -1,6 +1,11 @@
+@font-face {
+	font-family: Pattanakarn;
+	src: url(../../assets/font/Pattanakarn/FontsFree-Net-Pattanakarn-Regular.ttf);
+}
+
 // @font-face {
-// 	font-family: SF-Pro-Display;
-// 	src: url(../../assets/font/SF-Pro-Display-Regular.otf);
+// 	font-family: Chakra-SemiBold;
+// 	src: url(../../assets/font/ChakraPetch/ChakraPetch-SemiBold.ttf);
 // }
 
 // @font-face {
@@ -19,15 +24,18 @@ $breakpoints: (
 
 $container-width:	calc(100% - 30px);
 $subcontainer-width:calc(100% - 200px);
-$header-height:		100px;
+$header-height:		80px;
 
-$font:				sans-serif;
+$font:				Pattanakarn, sans-serif;
 $font2:				sans-serif;
 
-$font-size-0:		16px;
-$font-size-1:		3.75em;
-$font-size-2:		2.35em;
-$font-size-3:		1.525em;
+$font-size-0:		14px;
+$font-size-1:		5em;
+$font-size-2:		4em;
+$font-size-3:		2.75em;
+$font-size-4:		2.5em;
+$font-size-5:		1.525em;
+$font-size-6:		1.525em;
 
 $font-sizes:		(
 	0:					$font-size-0,
@@ -115,7 +123,7 @@ $theme-colors: (
 
 $bg:                #f1edfb;
 $box:				#ffffff;
-$color:             #2e3133;
+$color:             #000000;
 
 $bg-dark:           #011d4a;
 $color-dark:        #eef2f8;
@@ -123,7 +131,7 @@ $color-dark:        #eef2f8;
 :root {
 	--bg:               #FFFFFF;
 	--bg2:              #F5F5F5;
-	--color:            #2e3133;
+	--color:            #000000;
 	--color2:			#554d4d;
 	--box:				#d3ecfe;
 

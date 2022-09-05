@@ -13,6 +13,10 @@
 	@include flex(row, space-between, none, wrap, )
 }
 
+@mixin row-center {
+	@include flex(row, center, none, wrap, )
+}
+
 @mixin row-center-center {
 	@include flex(none, center, center, wrap, );
 }
@@ -35,6 +39,14 @@
 
 @mixin row-around-center {
 	@include flex(none, space-around, center, wrap, )
+}
+
+@mixin column {
+	@include flex(column, none, none, wrap, );
+}
+
+@mixin col-center-center {
+	@include flex(column, center, center, wrap, );
 }
 
 @mixin row($sp: 0.25em) {
@@ -87,12 +99,20 @@
 	@include row-between;
 }
 
+.row-between-center {
+	@include row-between-center;
+}
+
 .row-center-center {
 	@include row-center-center();
 }
 
 .row-around-center {
 	@include row-around-center;
+}
+
+.col-center-center {
+	@include col-center-center();
 }
 
 @each $key, $value in $spaces {

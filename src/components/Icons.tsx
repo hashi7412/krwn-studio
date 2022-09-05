@@ -18,9 +18,24 @@ const Icons = {
             <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"></path>
         </svg>
     ),
+    ArrowChevronUp: ({size, color}: IconProps) => (
+        <svg fill={ color || "var(--color)" } viewBox="0 0 16 16" height={ size || "1em" } width={ size || "1em" }>
+            <path fillRule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+        </svg>
+    ),
     ArrowChevronDown: ({size, color}: IconProps) => (
         <svg fill={ color || "var(--color)" } viewBox="0 0 16 16" height={ size || "1em" } width={ size || "1em" }>
             <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+        </svg>
+    ),
+    ArrowChevronLeft: ({size, color}: IconProps) => (
+        <svg fill={ color || "var(--color)" } viewBox="0 0 16 16" height={ size || "1em" } width={ size || "1em" }>
+            <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+        </svg>
+    ),
+    ArrowChevronRight: ({size, color}: IconProps) => (
+        <svg fill={ color || "var(--color)" } viewBox="0 0 16 16" height={ size || "1em" } width={ size || "1em" }>
+            <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
         </svg>
     ),
     Setting: ({size, color}: IconProps) => (
