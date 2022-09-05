@@ -60,8 +60,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 @mixin h4 {
     font-size: $font-size-4;
-    @include media-up (md) {
+    @include media-up (lg) {
         font-size: $font-size-5;
+    }
+    @include media-up (md) {
+        font-size: $font-size-6;
+    }
+    @include media-up (sm) {
+        font-size: $font-size-7;
     }
 }
 @mixin h5 {

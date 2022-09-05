@@ -1,0 +1,23 @@
+.expand-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    .expand {
+        position: absolute;
+        transition: all ease-in-out .4s;
+
+        >div {
+            height: 100%;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.expanded {
+            z-index: 2;
+            opacity: 1;
+        }
+    }
+}

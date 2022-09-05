@@ -126,7 +126,8 @@
 
 			>div {
 				background: url(../../assets/images/intro/Elipse.png) no-repeat;
-				background-size: cover;
+				background-size: 500% 500%;
+				background-position: center center;
 			}
 
 			* {
@@ -340,7 +341,6 @@
 }
 
 .collection {
-	padding-top: 0;
 	@include flex (row, space-between, center, none,);
 	>div {
 		flex: 1;
@@ -441,7 +441,7 @@
 }
 
 .mission {
-	padding-top: calc($header-height + $space-7);
+	padding-top: calc($header-height + $space-8);
 	padding-bottom: $space-4;
 	padding-left: $space-4;
 	padding-right: $space-4;
@@ -469,6 +469,7 @@
 .our-story {
 	@include row-center;
 	background: $black;
+	padding-top: $header-height;
 	.container {
 		@include column;
 		width: 100%;
@@ -544,6 +545,7 @@
 				}
 
 				>div {
+					position: relative;
 					background: $light-primary;
 					height: 100%;
 					@include col-center-center;
@@ -554,19 +556,26 @@
 					}
 
 					&:hover {
-						transform: scale(1.05);
-						transition: all ease-in-out .2s;
+						// transform: scale(1.05);
+						// transition: all ease-in-out .2s;
+						h4 {
+							color: var(--color);
+						}
 
 						.img {
 							img {
 								visibility: hidden;
 							}
 						}
+
+						p {
+							display: block;
+						}
 					}
 
-					// &:active {
-					// 	transform: scale(1.05) translate(0, 1em);
-					// }
+					&:active {
+						transform: scale(1.05) ;
+					}
 
 					> h4 {
 						color: $white;
@@ -586,20 +595,50 @@
 						}
 					}
 
+					p {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						display: none;
+						@include h5;
+						transform: translate(-50%, -50px);
+						text-align: center;
+
+						@include media-up (md) {
+							top: 70%;
+						}
+					}
+
 					&.ar {
 						background: #d0ffce70;
+
+						&:hover {
+							background: #d0ffce;
+						}
 					}
 
 					&.events {
 						background: #cceeff70;
+
+						&:hover {
+							background: #cceeff;
+						}
 					}
 
 					&.ship {
 						background: #ffb29270;
+
+						&:hover {
+							background: #ffb292;
+						}
 					}
 
 					&.create {
 						background: #ffe27b70;
+
+						&:hover {
+							background: #ffe27b;
+						}
 					}
 				}
 			}
@@ -620,6 +659,76 @@
 
 	@include media-up(sm) {
 		height: 300px;
+	}
+}
+
+.mindmap {
+	background: #F2F2F0;
+	padding-top: calc($header-height + $space-4);
+	padding-bottom: $space-4;
+	padding-left: $space-7;
+	padding-right: $space-7;
+	@include col-center-center;
+
+	.expand-container {
+
+		>div {
+			padding: $space-1;
+			> .expand-content-main {
+				padding: $space-2 $space-2;
+				@include flex(column, end, none, none,);
+				>span {
+					@include h4;
+				}
+			}
+		}
+
+		.map1 {
+			top: 0;
+			left: 0;
+			width: 25%;
+			height: 100%;
+			> div {
+				background: #FFB393 url(../../assets/images/mindmaps/transparent/2.png) no-repeat;
+				background-position: right center;
+				background-size: 100%;
+			}
+		}
+		.map2 {
+			> div {
+				background: #7CFF51 url(../../assets/images/mindmaps/transparent/1.png) no-repeat;
+				background-position: right top;
+				background-size: 70%;
+			}
+		}
+		.map3 {
+			> div {
+				background: #B8B8B8 url(../../assets/images/mindmaps/transparent/5.png) no-repeat;
+				background-position: right top;
+				background-size: 150%;
+			}
+		}
+		.map4 {
+			> div {
+				background: #B8B8B8 url(../../assets/images/mindmaps/transparent/4.png) no-repeat;
+				background-position: right center;
+				background-size: 150%;
+			}
+		}
+		.map5 {
+			> div {
+				background: #FFB393 url(../../assets/images/mindmaps/transparent/3.png) no-repeat;
+				background-position: center top;
+				background-size: 120%;
+			}
+		}
+		.map6 {
+			> div {
+				background: #7CFF51 url(../../assets/images/logo-dark.png) no-repeat;
+				background-position: 140% bottom;
+				background-size: 50%;
+			}
+		}
 	}
 }
 

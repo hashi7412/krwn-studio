@@ -16,7 +16,8 @@ import Innovate				from "../assets/images/innovate.gif"
 import Twitter				from "../assets/images/socials/twitter.png"
 import Instagram			from "../assets/images/socials/instagram.png"
 import Discord				from "../assets/images/socials/discord.png"
-import Email				from "../assets/images/socials/twitter.png"
+import Email				from "../assets/images/socials/email.png"
+import Expand from "../components/Expand"
 
 const Home = () => {
 	const { Logo } = useStore()
@@ -87,6 +88,9 @@ const Home = () => {
 			</div>
 		)
 	]
+
+	const expand = () => {
+	}
 
 	return (
 		<main>
@@ -237,6 +241,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Camera} alt="AR" />
 								</div>
+								<p>Hello, This is the test</p>
 							</div>
 						</div>
 						<div>
@@ -245,6 +250,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Events} alt="Events" />
 								</div>
+								<p>Hello, This is the test</p>
 							</div>
 						</div>
 						<div>
@@ -253,6 +259,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Handshake} alt="KRWNship" />
 								</div>
+								<p>Hello, This is the test</p>
 							</div>
 						</div>
 						<div>
@@ -261,6 +268,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Krwn} alt="Create" />
 								</div>
+								<p>Hello, This is the test</p>
 							</div>
 						</div>
 					</div>
@@ -270,25 +278,109 @@ const Home = () => {
 				<img src={Innovate} alt="Innovate" />
 			</section>
 			<section className="mindmap">
-				<div>
-					<div className="grid">
-						<div>
+				<div className="expand-container">
+					<Expand className="map1"
+						top="0"
+						left="0"
+						width="25%"
+						height="100%"
+						swapChildren={(
 							<div>
 								<h1>01</h1>
-								<p>Vision & Values</p>
+								<p>this is test.</p>
 							</div>
+						)}
+					>
+						<div className="expand-content-main">
+							<h1>01</h1>
+							<span>Vision & Values</span>
 						</div>
-						<div>
+					</Expand>
+					<Expand className="map2"
+						top="0"
+						left="25%"
+						width="25%"
+						height="33.33%"
+						swapChildren={(
 							<div>
-								<h1>02</h1>
-								<p>Community</p>
+								<h1>01</h1>
+								<p>this is test.</p>
 							</div>
-							<div>
-								<h1>03</h1>
-								<p>Create with KRWN</p>
-							</div>
+						)}
+					>
+						<div className="expand-content-main">
+							<h1>02</h1>
+							<span>Community</span>
 						</div>
-					</div>
+					</Expand>
+					<Expand className="map3"
+						top="33.33%"
+						left="25%"
+						width="25%"
+						height="66.66%"
+						swapChildren={(
+							<div>
+								<h1>01</h1>
+								<p>this is test.</p>
+							</div>
+						)}
+					>
+						<div className="expand-content-main">
+							<h1>03</h1>
+							<span className="text-upper">Create with KRWN</span>
+						</div>
+					</Expand>
+					<Expand className="map4"
+						top="0"
+						left="50%"
+						width="25%"
+						height="66.66%"
+						swapChildren={(
+							<div>
+								<h1>01</h1>
+								<p>this is test.</p>
+							</div>
+						)}
+					>
+						<div className="expand-content-main">
+							<h1>04</h1>
+							<span className="text-upper">NEW DROPS</span>
+						</div>
+					</Expand>
+					<Expand className="map5"
+						top="0"
+						left="75%"
+						width="25%"
+						height="66.66%"
+						swapChildren={(
+							<div>
+								<h1>01</h1>
+								<p>this is test.</p>
+							</div>
+						)}
+					>
+						<div className="expand-content-main">
+							<h1>05</h1>
+							<span className="text-upper">METAVERSE</span>
+						</div>
+					</Expand>
+					<Expand className="map6"
+						top="66.66%"
+						left="50%"
+						width="50%"
+						height="33.33%"
+						swapChildren={(
+							<div>
+								<h1>01</h1>
+								<p>this is test.</p>
+							</div>
+						)}
+					>
+						<div className="expand-content-main">
+							<h1>06</h1>
+							<span>Decentralization</span>
+						</div>
+					</Expand>
 				</div>
 			</section>
 			<section className="withus">
