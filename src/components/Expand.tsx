@@ -32,8 +32,6 @@ const Expand = ({ className, top, left, width, height, swapChildren, onClick, ch
 
 	const refContainer = React.useRef<HTMLDivElement>(null)
 
-	const { current: container } = refContainer;
-
 	const expand = () => {
 		if (onClick) onClick()
 		if (!isExpand) {

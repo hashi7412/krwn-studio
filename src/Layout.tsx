@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Icons from "./components/Icons"
 import useStore, { config } from "./useStore"
 
 interface LayoutProps {
@@ -8,7 +7,7 @@ interface LayoutProps {
 }
 
 export default function Layout ({children}: {children: any}) {
-    const { theme, Logo, update } = useStore()
+    const { theme, Logo } = useStore()
 
     const [status, setStatus] = React.useState<LayoutProps>({
         checked: false,

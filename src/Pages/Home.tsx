@@ -89,9 +89,6 @@ const Home = () => {
 		)
 	]
 
-	const expand = () => {
-	}
-
 	return (
 		<main>
 			<section className="banner">
@@ -241,7 +238,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Camera} alt="AR" />
 								</div>
-								<p>Hello, This is the test</p>
+								<p>The Metaverse is a virtual reality space</p>
 							</div>
 						</div>
 						<div>
@@ -250,7 +247,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Events} alt="Events" />
 								</div>
-								<p>Hello, This is the test</p>
+								<p>Join us for a one-of-a-kind event in the heart of the Metaverse</p>
 							</div>
 						</div>
 						<div>
@@ -259,7 +256,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Handshake} alt="KRWNship" />
 								</div>
-								<p>Hello, This is the test</p>
+								<p>As a citizen of KRWNship, you will have access to a vast array of resources</p>
 							</div>
 						</div>
 						<div>
@@ -268,7 +265,7 @@ const Home = () => {
 								<div className="img">
 									<img src={Krwn} alt="Create" />
 								</div>
-								<p>Hello, This is the test</p>
+								<p>The metaverse is a revolutionary concept</p>
 							</div>
 						</div>
 					</div>

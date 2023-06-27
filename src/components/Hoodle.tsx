@@ -120,7 +120,7 @@ const Hoodle = () => {
 				renderer.dispose();
 			};
 		}
-	}, []);
+	}, [renderer]);
 
 	return (
 		<div
