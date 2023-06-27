@@ -6,6 +6,7 @@
     .expand {
         position: absolute;
         transition: all ease-in-out .4s;
+        overflow: hidden;
 
         >div {
             height: 100%;
