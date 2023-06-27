@@ -353,7 +353,7 @@
 			width: 25%;
 			@include flex (column, space-between, center, none,);
 			height: 100%;
-			cursor: default;
+			cursor: pointer;
 
 			&:hover {
 				opacity: 0.6;
@@ -679,6 +679,8 @@
 
 		>div {
 			padding: $space-1;
+			cursor: pointer;
+
 			> .expand-content-main {
 				padding: $space-2 $space-2;
 				@include flex(column, end, none, none,);
@@ -739,7 +741,7 @@
 
 .withus {
 	.container {
-		padding-top: $space-4;
+		padding-top: $space-8;
 		padding-bottom: $space-1;
 		padding-left: $space-4;
 		padding-right: $space-4;

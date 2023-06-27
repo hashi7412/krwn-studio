@@ -94,8 +94,7 @@ header {
 		position: relative;
 		min-height: $header-height;
 		@include container;
-		@include row-between-end;
-		padding-bottom: $space-2;
+		@include row-between-center;
 		overflow: initial;
 
 		#menu-checkbox {
@@ -142,8 +141,9 @@ header {
 			list-style: none;
 			li {
 				a {
-					display: block;
-					padding: 0.3em $space-2;
+					display: inline-block;
+					padding: 0.2rem $space-2 0;
+					line-height: 25px;
 					background: $lightgray;
 					border-radius: 0.3em;
 					
