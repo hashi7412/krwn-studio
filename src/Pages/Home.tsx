@@ -284,7 +284,10 @@ const Home = () => {
 						swapChildren={(
 							<div>
 								<h1>01</h1>
-								<p>this is test.</p>
+								<div style={{maxWidth: "600px", padding: "3rem 5rem", fontSize: "1.3rem"}}>
+									<p><b>Vision:</b> Our vision for the metaverse is to create a limitless digital realm where individuals can connect, collaborate, and explore a vast universe of virtual experiences, transcending the constraints of physical reality.</p>
+									<p><b>Values:</b> Our values are rooted in empowerment, inclusivity, privacy, and innovation, guiding us to create a metaverse that empowers individuals, fosters diverse communities, protects privacy, and inspires limitless creativity.</p>
+								</div>
 							</div>
 						)}
 					>
@@ -300,8 +303,10 @@ const Home = () => {
 						height="33.33%"
 						swapChildren={(
 							<div>
-								<h1>01</h1>
-								<p>this is test.</p>
+								<h1>02</h1>
+								<div style={{maxWidth: "600px", padding: "3rem 5rem", fontSize: "1.3rem"}}>
+									<p>In the metaverse, a vibrant and diverse community thrives, bringing together people from all walks of life in a shared digital space where they can connect, socialize, and forge meaningful relationships, breaking down geographical barriers and fostering a sense of belonging and collaboration that transcends borders.</p>
+								</div>
 							</div>
 						)}
 					>
@@ -317,8 +322,10 @@ const Home = () => {
 						height="66.66%"
 						swapChildren={(
 							<div>
-								<h1>01</h1>
-								<p>this is test.</p>
+								<h1>03</h1>
+								<div style={{maxWidth: "600px", padding: "3rem 5rem", fontSize: "1.3rem"}}>
+									<p>With KRWN, imagination knows no limits, as users become the architects of their own digital universes, shaping the metaverse into a stunning tapestry of boundless imagination and artistic expression.</p>
+								</div>
 							</div>
 						)}
 					>
@@ -334,8 +341,10 @@ const Home = () => {
 						height="66.66%"
 						swapChildren={(
 							<div>
-								<h1>01</h1>
-								<p>this is test.</p>
+								<h1>04</h1>
+								<div style={{maxWidth: "600px", padding: "3rem 5rem", fontSize: "1.3rem"}}>
+									<p>Cutting-edge feature in the metaverse that offers a curated selection of exclusive virtual assets, artworks, fashion, and experiences, providing users.</p>
+								</div>
 							</div>
 						)}
 					>
@@ -351,8 +360,10 @@ const Home = () => {
 						height="66.66%"
 						swapChildren={(
 							<div>
-								<h1>01</h1>
-								<p>this is test.</p>
+								<h1>05</h1>
+								<div style={{maxWidth: "600px", padding: "3rem 5rem", fontSize: "1.3rem"}}>
+									<p>Embrace a new dimension of existence where imagination becomes tangible, and the possibilities of self-expression, collaboration, and adventure are endless within the vast expanse of the metaverse</p>
+								</div>
 							</div>
 						)}
 					>
@@ -368,8 +379,11 @@ const Home = () => {
 						height="33.33%"
 						swapChildren={(
 							<div>
-								<h1>01</h1>
-								<p>this is test.</p>
+								<h1>06</h1>
+								<div style={{maxWidth: "600px", padding: "3rem 5rem", fontSize: "1.3rem"}}>
+									<p>Our metaverse website embraces decentralization, empowering individuals by removing central authorities and giving users more control over their virtual experiences and identities. </p>
+									<p>Through decentralized infrastructure and protocols, we create a metaverse where users can freely interact, own their digital assets, and contribute to the evolution of the virtual ecosystem, ensuring a more democratic and resilient digital future.</p>
+								</div>
 							</div>
 						)}
 					>
