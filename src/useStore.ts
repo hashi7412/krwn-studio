@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { useSelector, useDispatch } from 'react-redux'
 import Config from './config.json'
 
-import LogoIcon         from "./assets/images/logo-light.png"
+// import LogoIcon         from "./assets/images/logo-light.png"
 import LogoDarkIcon     from "./assets/images/logo-dark.png"
 
 export const config = Config
@@ -65,7 +65,7 @@ const useStore = () => {
 
     const showLoading = (visible: boolean) => update({loading: visible})
 
-    const Logo = G.theme === "" ? LogoIcon : LogoDarkIcon
+    const Logo = G.theme === "" ? LogoDarkIcon : LogoDarkIcon
 
     return { ...G, dispatch, update, showLoading, Logo }
 }
